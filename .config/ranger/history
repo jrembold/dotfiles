@@ -1,0 +1,50 @@
+rename Test 2
+rename Test2a.tex
+rename Zech Hazel
+rename Zech.tex
+open_with chromium
+rename Print Services 2.pdf
+rename 20170313.tex
+mkdir Ch8
+shell vim Ch8.tex
+rename 20170315.tex
+shell av
+vi
+shell vim cropping_sampler.py
+rename posgrab_sampler.py
+mkdir Ch16
+rename 20170417_Telescopes.tex
+mkdir Lab 9
+rename Lab9.tex
+shell 
+mkdir Lab 10
+rename Lab10.tex
+mkdir Ch18
+rename 20170426.tex
+bulk
+bulkrename 
+rename PeerReview.tex
+rename motiondetect_v8.py
+open_with 2
+rename motiondetect_v9.py
+rename motiondetect_v8_Gray.py
+rename motiondetect_v9_Gray.py
+open_with vimdiff
+rename motiondetect_v10_Gray.py
+open_with 0
+rename library.py
+open_with vim
+shell convert %s -resize 1024x768 %s
+shell convert %f -resize 1024x768 %f
+shell convert %f -resize 1024x768/> %f
+shell convert %f -resize 1024x768\> %f
+open_with 
+shell ./etcher-electorn
+open_with 1
+mkdir Teaching Materials
+mkdir Knight
+mkdir html.snippets
+delete 
+
+shell vim html.snippets
+shell touch intro-commands.sty
