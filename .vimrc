@@ -98,6 +98,9 @@ let g:vimtex_view_method = 'zathura'
 let g:vimtex_quickfix_latexlog = {'overfull':0, 'underfull':0}
 " Default to .tex files as tex filetype
 let g:tex_flavor='latex'
+" Adding Shell Escaping
+let g:vimtex_latexmk_options = '-pdf -shell-escape -verbose -file-line-error -synctex=1 -interaction=nonstopmode'
+
 " Clean up files upon exit
 augroup vimtex_config
 	autocmd!

@@ -1,3 +1,4 @@
+$pdflatex = 'pdflatex --shell-escape %O %S';
 push @generated_exts, "cb";
 push @generated_exts, "cb2";
 push @generated_exts, "spl";
