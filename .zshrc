@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -6,55 +13,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="jeds-theme-powerline"
-ZSH_THEME='powerlevel9k/powerlevel9k'
+ZSH_THEME='powerlevel10k/powerlevel10k'
 #ZSH_THEME='agnoster'
-
-# Configuracion POWERLVEL9K
-#POWERLEVEL9K_MODE='nerdfont-complete'
-
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=4
-POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
-
-# Elements
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv time vi_mode)
-POWERLEVEL9K_STATUS_VERBOSE=false
-
-POWERLEVEL9K_DIR_HOME_BACKGROUND='09'
-POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='09'
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='009'
-POWERLEVEL9K_DIR_HOME_FOREGROUND='236'
-POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='236'
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='236'
-
-# `git hub colors`
-#POWERLEVEL9K_VCS_CLEAN_BACKGROUND='236'
-POWERLEVEL9K_VCS_CLEAN_BACKGROUND='029'
-POWERLEVEL9K_VCS_CLEAN_FOREGROUND='236'
-POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='214'
-POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='236'
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='196'
-POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='236'
-
-# Icons
-POWERLEVEL9K_HOME_ICON=''
-POWERLEVEL9K_HOME_SUB_ICON=''
-POWERLEVEL9K_FOLDER_ICON=''
-
-# Vi-Mode
-POWERLEVEL9K_VI_MODE_INSERT_BACKGROUND='220'
-POWERLEVEL9K_VI_MODE_INSERT_FOREGROUND='236'
-POWERLEVEL9K_VI_MODE_NORMAL_BACKGROUND='245'
-POWERLEVEL9K_VI_MODE_NORMAL_FOREGROUND='236'
-
-# Clock
-POWERLEVEL9K_TIME_BACKGROUND='233'
-POWERLEVEL9K_TIME_FOREGROUND='09'
-
-# My additions
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
-POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX=' ❯ '
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -94,14 +54,12 @@ POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX=' ❯ '
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+#plugins=(archlinux git vi-mode)
 plugins=(archlinux git)
-
-# User configuration
-#bindkey -v
-#export KEYTIMEOUT=1
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/home/jedediah/Bin/":"/home/jedediah/.local/bin/":$PATH # <- was moved to .zshenv but maybe needs to be here as well?
 
 source $ZSH/oh-my-zsh.sh
 
@@ -130,9 +88,35 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Custom Aliases
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias vim=nvim
 
 # Custom Exports
-export EDITOR=/usr/bin/vim
-export VISUAL=/usr/bin/vim
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
+export TERMCMD='st'
 export DEFAULT_USER=jedediah
-alias vim='vim --servername VIM' # for texvim callbacks
+#alias vim='vim --servername VIM' #for texvim callbacks
+
+cat ~/.cache/wal/sequences
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+#__conda_setup="$('/home/jedediah/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+	#eval "$__conda_setup"
+#else
+	#if [ -f "/home/jedediah/miniconda3/etc/profile.d/conda.sh" ]; then
+		#. "/home/jedediah/miniconda3/etc/profile.d/conda.sh"
+	#else
+		#export PATH="/home/jedediah/miniconda3/bin:$PATH"
+	#fi
+#fi
+#unset __conda_setup
+# <<< conda initialize <<<
+
+source ~/.api_keys

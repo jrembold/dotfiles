@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/orange_droplets.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#020C35",
+        "foreground": "#7acdd7",
+        "cursor": "#7acdd7"
+    },
+    "colors": {
+        "color0": "#020C35",
+        "color1": "#FF8D3A",
+        "color2": "#FFA52F",
+        "color3": "#FF954A",
+        "color4": "#FFA54C",
+        "color5": "#FBA56F",
+        "color6": "#E3B578",
+        "color7": "#7acdd7",
+        "color8": "#558f96",
+        "color9": "#FF8D3A",
+        "color10": "#FFA52F",
+        "color11": "#FF954A",
+        "color12": "#FFA54C",
+        "color13": "#FBA56F",
+        "color14": "#E3B578",
+        "color15": "#7acdd7"
+    }
+}

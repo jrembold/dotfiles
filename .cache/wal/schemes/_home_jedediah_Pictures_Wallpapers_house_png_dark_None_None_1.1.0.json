@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/house.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0e180a",
+        "foreground": "#8ac2c4",
+        "cursor": "#8ac2c4"
+    },
+    "colors": {
+        "color0": "#0e180a",
+        "color1": "#A07264",
+        "color2": "#348D68",
+        "color3": "#509169",
+        "color4": "#67A56C",
+        "color5": "#98AE6C",
+        "color6": "#117C84",
+        "color7": "#8ac2c4",
+        "color8": "#608789",
+        "color9": "#A07264",
+        "color10": "#348D68",
+        "color11": "#509169",
+        "color12": "#67A56C",
+        "color13": "#98AE6C",
+        "color14": "#117C84",
+        "color15": "#8ac2c4"
+    }
+}

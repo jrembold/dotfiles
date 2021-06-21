@@ -3,11 +3,8 @@ URxvt.buffered: true
 URxvt.cursorColor: #5E468C
 URxvt.cursorBlink: true
 URxvt.geometry: 60x40
-URxvt.transparent: true 
-URxvt.font:xft:Inconsolata for Powerline:pixelsize=16:antialias=true:hinting=true
-!URxvt.font:xft:InconsolataForPowerline Nerd Font:pixelsize=16:antialias=true
-!URxvt.font:xft:Inconsolata Awesome:pixelsize=16
-!URxvt.letterspace: 2
+URxvt.font:xft:Inconsolata Awesome:pixelsize=17:antialiasing=true
+!URxvt.font:xft:Inconsolata for Powerline:pixelsize=17:antialiasing=true
 URxvt*urgentOnBell: true
 
 ! Clickable Links!
@@ -17,15 +14,17 @@ URxvt.matcher.button: 2
 URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
 
 
+
 ! borderless and no scrollbar
 URxvt.scrollBar_right: false
 URxvt.scrollBar: false
 URxvt.borderless: false
 
 !teh transparency stuff
+URxvt.transparent: true 
 URxvt*inheritPixmap: true 
 URxvt*tintcolor: white 
-URxvt*shading: 20
+URxvt*shading: 15
 
 ! terminal color definitions
 ! Common
@@ -75,15 +74,17 @@ URxvt*shading: 20
 *color14:                 S_base1
 *color15:                 S_base3
 
-
 gnuplot*background: black  
 
-!------- Rofi Settings ------------
-rofi.color-enabled: true
-rofi.color-window: #202020, #000000, #525252
-rofi.color-normal: #656565, #d6d6d6, #979797, #06ada1, #eeeeee
-rofi.color-active: #fdf6e3, #268bd2, #eee8d5, #268bd2, #fdf6e3
-rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
-rofi.width: 30
-rofi.lines: 5
-rofi.font: InconsolataForPowerline Nerd Font 18
+!--------- Rofi Settings ---------------
+!rofi.lines: 4
+!rofi.eh: 2
+!rofi.width: 100
+!rofi.padding: 700
+!rofi.color-enabled: true
+!rofi.color-window: argb:9e171717, argb:0002b36, argb:0000000
+!rofi.color-normal: argb:0fdf6e3, #d5d5d5, argb:0eee8d5, argb:922aa198, #000000
+!rofi.color-active: argb:9282decf, #000000, #eee8d5, #268bd2, #fdf6e3
+!rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
+!rofi.font: Inconsolata Awesome 20
+!rofi.monitor: 1

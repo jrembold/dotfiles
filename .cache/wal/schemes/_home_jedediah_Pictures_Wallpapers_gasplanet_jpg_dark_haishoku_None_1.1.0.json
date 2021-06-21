@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/gasplanet.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1a1a1b",
+        "foreground": "#c5c5c6",
+        "cursor": "#c5c5c6"
+    },
+    "colors": {
+        "color0": "#1a1a1b",
+        "color1": "#455672",
+        "color2": "#76474b",
+        "color3": "#506a8e",
+        "color4": "#696d7d",
+        "color5": "#ce4a4f",
+        "color6": "#e09078",
+        "color7": "#c5c5c6",
+        "color8": "#535354",
+        "color9": "#455672",
+        "color10": "#76474b",
+        "color11": "#506a8e",
+        "color12": "#696d7d",
+        "color13": "#ce4a4f",
+        "color14": "#e09078",
+        "color15": "#c5c5c6"
+    }
+}

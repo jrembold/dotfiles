@@ -1,0 +1,21 @@
+set $wallpaper /home/jedediah/Pictures/Wallpapers/lookout.jpg
+
+set $background #0A1E20
+set $foreground #ddeabf
+
+set $color0 #0A1E20
+set $color1 #3E8E62
+set $color2 #54986D
+set $color3 #5CA175
+set $color4 #8EB777
+set $color5 #77B188
+set $color6 #A7CE8A
+set $color7 #ddeabf
+set $color8 #9aa385
+set $color9 #3E8E62
+set $color10 #54986D
+set $color11 #5CA175
+set $color12 #8EB777
+set $color13 #77B188
+set $color14 #A7CE8A
+set $color15 #ddeabf

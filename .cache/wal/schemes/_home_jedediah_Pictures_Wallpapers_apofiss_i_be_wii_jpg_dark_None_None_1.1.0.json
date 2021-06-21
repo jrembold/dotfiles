@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/apofiss_i_be_wii.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#03101A",
+        "foreground": "#c7efdb",
+        "cursor": "#c7efdb"
+    },
+    "colors": {
+        "color0": "#03101A",
+        "color1": "#406F69",
+        "color2": "#4D8B79",
+        "color3": "#205C8F",
+        "color4": "#50A49C",
+        "color5": "#54AEA3",
+        "color6": "#A8ECB6",
+        "color7": "#c7efdb",
+        "color8": "#8ba799",
+        "color9": "#406F69",
+        "color10": "#4D8B79",
+        "color11": "#205C8F",
+        "color12": "#50A49C",
+        "color13": "#54AEA3",
+        "color14": "#A8ECB6",
+        "color15": "#c7efdb"
+    }
+}

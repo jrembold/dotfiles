@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/red_mountains.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#160f18",
+        "foreground": "#e8baa3",
+        "cursor": "#e8baa3"
+    },
+    "colors": {
+        "color0": "#160f18",
+        "color1": "#B1766B",
+        "color2": "#D8664F",
+        "color3": "#D3745A",
+        "color4": "#C87A63",
+        "color5": "#FD9037",
+        "color6": "#A38378",
+        "color7": "#e8baa3",
+        "color8": "#a28272",
+        "color9": "#B1766B",
+        "color10": "#D8664F",
+        "color11": "#D3745A",
+        "color12": "#C87A63",
+        "color13": "#FD9037",
+        "color14": "#A38378",
+        "color15": "#e8baa3"
+    }
+}

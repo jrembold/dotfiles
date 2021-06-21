@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/fox_in_forest.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#16181d",
+        "foreground": "#c4c5c6",
+        "cursor": "#c4c5c6"
+    },
+    "colors": {
+        "color0": "#16181d",
+        "color1": "#31507d",
+        "color2": "#467795",
+        "color3": "#6596a1",
+        "color4": "#88d2ab",
+        "color5": "#8bd9c4",
+        "color6": "#acddb1",
+        "color7": "#c4c5c6",
+        "color8": "#505155",
+        "color9": "#31507d",
+        "color10": "#467795",
+        "color11": "#6596a1",
+        "color12": "#88d2ab",
+        "color13": "#8bd9c4",
+        "color14": "#acddb1",
+        "color15": "#c4c5c6"
+    }
+}

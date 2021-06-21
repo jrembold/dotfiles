@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/koi.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0F1014",
+        "foreground": "#c4c2c3",
+        "cursor": "#c4c2c3"
+    },
+    "colors": {
+        "color0": "#0F1014",
+        "color1": "#595C63",
+        "color2": "#6A6A6F",
+        "color3": "#A0673E",
+        "color4": "#DCA006",
+        "color5": "#7B7C82",
+        "color6": "#817F84",
+        "color7": "#c4c2c3",
+        "color8": "#898788",
+        "color9": "#595C63",
+        "color10": "#6A6A6F",
+        "color11": "#A0673E",
+        "color12": "#DCA006",
+        "color13": "#7B7C82",
+        "color14": "#817F84",
+        "color15": "#c4c2c3"
+    }
+}

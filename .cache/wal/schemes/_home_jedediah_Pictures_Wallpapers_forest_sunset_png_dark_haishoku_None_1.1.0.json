@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/forest_sunset.png",
+    "alpha": "100",
+    "special": {
+        "background": "#14181b",
+        "foreground": "#c4c5c6",
+        "cursor": "#c4c5c6"
+    },
+    "colors": {
+        "color0": "#14181b",
+        "color1": "#0e496b",
+        "color2": "#1f6b85",
+        "color3": "#3395ab",
+        "color4": "#40b0bc",
+        "color5": "#79b8bf",
+        "color6": "#d7c3b6",
+        "color7": "#c4c5c6",
+        "color8": "#4e5154",
+        "color9": "#0e496b",
+        "color10": "#1f6b85",
+        "color11": "#3395ab",
+        "color12": "#40b0bc",
+        "color13": "#79b8bf",
+        "color14": "#d7c3b6",
+        "color15": "#c4c5c6"
+    }
+}

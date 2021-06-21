@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/electric_abstract.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0B1217",
+        "foreground": "#83c3df",
+        "cursor": "#83c3df"
+    },
+    "colors": {
+        "color0": "#0B1217",
+        "color1": "#124654",
+        "color2": "#124D6F",
+        "color3": "#235F66",
+        "color4": "#339B5D",
+        "color5": "#1B6795",
+        "color6": "#147EC3",
+        "color7": "#83c3df",
+        "color8": "#5b889c",
+        "color9": "#124654",
+        "color10": "#124D6F",
+        "color11": "#235F66",
+        "color12": "#339B5D",
+        "color13": "#1B6795",
+        "color14": "#147EC3",
+        "color15": "#83c3df"
+    }
+}

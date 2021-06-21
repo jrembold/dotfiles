@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/abstractwaves.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#120a12",
+        "foreground": "#8dddf0",
+        "cursor": "#8dddf0"
+    },
+    "colors": {
+        "color0": "#120a12",
+        "color1": "#E55D15",
+        "color2": "#EEA94E",
+        "color3": "#125A9E",
+        "color4": "#3764AC",
+        "color5": "#B25AA2",
+        "color6": "#159DDF",
+        "color7": "#8dddf0",
+        "color8": "#629aa8",
+        "color9": "#E55D15",
+        "color10": "#EEA94E",
+        "color11": "#125A9E",
+        "color12": "#3764AC",
+        "color13": "#B25AA2",
+        "color14": "#159DDF",
+        "color15": "#8dddf0"
+    }
+}

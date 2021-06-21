@@ -1,0 +1,31 @@
+set recolor "true"
+
+set completion-bg "#0A1E20"
+set completion-fg "#ddeabf"
+set completion-group-bg "#0A1E20"
+set completion-group-fg "#54986D"
+set completion-highlight-bg "#ddeabf"
+set completion-highlight-fg "#0A1E20"
+set recolor-lightcolor "#0A1E20"
+set recolor-darkcolor "#ddeabf"
+set default-bg "#0A1E20"
+set inputbar-bg "#0A1E20"
+set inputbar-fg "#ddeabf"
+set notification-bg "#0A1E20"
+set notification-fg "#ddeabf"
+set notification-error-bg "#3E8E62"
+set notification-error-fg "#ddeabf"
+set notification-warning-bg "#3E8E62"
+set notification-warning-fg "#ddeabf"
+set statusbar-bg "#0A1E20"
+set statusbar-fg "#ddeabf"
+set index-bg "#0A1E20"
+set index-fg "#ddeabf"
+set index-active-bg "#ddeabf"
+set index-active-fg "#0A1E20"
+set render-loading-bg "#0A1E20"
+set render-loading-fg "#ddeabf"
+
+set window-title-home-tilde true
+set statusbar-basename true
+set selection-clipboard clipboard

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/neon_astronaut.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#09090C",
+        "foreground": "#e7c9c2",
+        "cursor": "#e7c9c2"
+    },
+    "colors": {
+        "color0": "#09090C",
+        "color1": "#565864",
+        "color2": "#A55442",
+        "color3": "#D0966B",
+        "color4": "#536E8D",
+        "color5": "#A569A2",
+        "color6": "#6E99B2",
+        "color7": "#e7c9c2",
+        "color8": "#a18c87",
+        "color9": "#565864",
+        "color10": "#A55442",
+        "color11": "#D0966B",
+        "color12": "#536E8D",
+        "color13": "#A569A2",
+        "color14": "#6E99B2",
+        "color15": "#e7c9c2"
+    }
+}

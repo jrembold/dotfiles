@@ -1,0 +1,5 @@
+set incremental-search true
+include /home/jedediah/.cache/wal/colors-zathura-dark
+set recolor-keephue true
+
+

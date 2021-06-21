@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/submicron_Obelus_Inhabitant.png",
+    "alpha": "100",
+    "special": {
+        "background": "#040B11",
+        "foreground": "#cbdee2",
+        "cursor": "#cbdee2"
+    },
+    "colors": {
+        "color0": "#040B11",
+        "color1": "#95766D",
+        "color2": "#4B748C",
+        "color3": "#6893A1",
+        "color4": "#59ADC6",
+        "color5": "#95A4A9",
+        "color6": "#A1BAC4",
+        "color7": "#cbdee2",
+        "color8": "#8e9b9e",
+        "color9": "#95766D",
+        "color10": "#4B748C",
+        "color11": "#6893A1",
+        "color12": "#59ADC6",
+        "color13": "#95A4A9",
+        "color14": "#A1BAC4",
+        "color15": "#cbdee2"
+    }
+}

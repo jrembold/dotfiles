@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/firewatch.png",
+    "alpha": "100",
+    "special": {
+        "background": "#120001",
+        "foreground": "#f6da89",
+        "cursor": "#f6da89"
+    },
+    "colors": {
+        "color0": "#120001",
+        "color1": "#AA4C1A",
+        "color2": "#D86E1B",
+        "color3": "#F08A1B",
+        "color4": "#FFB01B",
+        "color5": "#E49B22",
+        "color6": "#FFC31B",
+        "color7": "#f6da89",
+        "color8": "#ac985f",
+        "color9": "#AA4C1A",
+        "color10": "#D86E1B",
+        "color11": "#F08A1B",
+        "color12": "#FFB01B",
+        "color13": "#E49B22",
+        "color14": "#FFC31B",
+        "color15": "#f6da89"
+    }
+}

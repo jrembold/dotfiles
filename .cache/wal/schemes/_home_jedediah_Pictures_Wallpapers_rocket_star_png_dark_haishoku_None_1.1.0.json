@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/rocket_star.png",
+    "alpha": "100",
+    "special": {
+        "background": "#16171c",
+        "foreground": "#c4c5c6",
+        "cursor": "#c4c5c6"
+    },
+    "colors": {
+        "color0": "#16171c",
+        "color1": "#1e4277",
+        "color2": "#713144",
+        "color3": "#3a6298",
+        "color4": "#d9494b",
+        "color5": "#76789e",
+        "color6": "#df8b94",
+        "color7": "#c4c5c6",
+        "color8": "#505154",
+        "color9": "#1e4277",
+        "color10": "#713144",
+        "color11": "#3a6298",
+        "color12": "#d9494b",
+        "color13": "#76789e",
+        "color14": "#df8b94",
+        "color15": "#c4c5c6"
+    }
+}

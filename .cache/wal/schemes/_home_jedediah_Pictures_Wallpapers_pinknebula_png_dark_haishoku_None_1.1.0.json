@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/pinknebula.png",
+    "alpha": "100",
+    "special": {
+        "background": "#19161a",
+        "foreground": "#c5c4c5",
+        "cursor": "#c5c4c5"
+    },
+    "colors": {
+        "color0": "#19161a",
+        "color1": "#662256",
+        "color2": "#413180",
+        "color3": "#853580",
+        "color4": "#c6458e",
+        "color5": "#e45ba4",
+        "color6": "#ef76c4",
+        "color7": "#c5c4c5",
+        "color8": "#525053",
+        "color9": "#662256",
+        "color10": "#413180",
+        "color11": "#853580",
+        "color12": "#c6458e",
+        "color13": "#e45ba4",
+        "color14": "#ef76c4",
+        "color15": "#c5c4c5"
+    }
+}

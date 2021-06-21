@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/asteroidring.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#151718",
+        "foreground": "#c4c5c5",
+        "cursor": "#c4c5c5"
+    },
+    "colors": {
+        "color0": "#151718",
+        "color1": "#074565",
+        "color2": "#74351c",
+        "color3": "#146889",
+        "color4": "#238eb4",
+        "color5": "#728173",
+        "color6": "#d87a35",
+        "color7": "#c4c5c5",
+        "color8": "#4f5151",
+        "color9": "#074565",
+        "color10": "#74351c",
+        "color11": "#146889",
+        "color12": "#238eb4",
+        "color13": "#728173",
+        "color14": "#d87a35",
+        "color15": "#c4c5c5"
+    }
+}

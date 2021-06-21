@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jedediah/Pictures/Wallpapers/pluto.png",
+    "alpha": "100",
+    "special": {
+        "background": "#030303",
+        "foreground": "#cad9db",
+        "cursor": "#cad9db"
+    },
+    "colors": {
+        "color0": "#030303",
+        "color1": "#C88878",
+        "color2": "#737B83",
+        "color3": "#7095A6",
+        "color4": "#A69F95",
+        "color5": "#C7B3A1",
+        "color6": "#D3C9B5",
+        "color7": "#cad9db",
+        "color8": "#8d9799",
+        "color9": "#C88878",
+        "color10": "#737B83",
+        "color11": "#7095A6",
+        "color12": "#A69F95",
+        "color13": "#C7B3A1",
+        "color14": "#D3C9B5",
+        "color15": "#cad9db"
+    }
+}
