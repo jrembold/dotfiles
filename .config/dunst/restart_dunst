@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Script to handle closing dunst and then relaunching
+# Include some initial notifications to test with
+
+killall dunst
+dunst &
+notify-send "This is a test of the notification decorations!"
+notify-send "This is another notification!"
+notify-send "This one is urgent!" -u critical
+notify-send "And this is low priority" -u low

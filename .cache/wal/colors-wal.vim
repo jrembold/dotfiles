@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/jedediah/Pictures/Wallpaper/forest_minimal.jpg"
+let background = "#0D1D23"
+let foreground = "#dceabf"
+let cursor     = "#dceabf"
+
+" Colors
+let color0  = "#0D1D23"
+let color1  = "#3F8C61"
+let color2  = "#54986D"
+let color3  = "#5CA174"
+let color4  = "#90BA7A"
+let color5  = "#77B188"
+let color6  = "#A7CD87"
+let color7  = "#dceabf"
+let color8  = "#9aa385"
+let color9  = "#3F8C61"
+let color10 = "#54986D"
+let color11 = "#5CA174"
+let color12 = "#90BA7A"
+let color13 = "#77B188"
+let color14 = "#A7CD87"
+let color15 = "#dceabf"

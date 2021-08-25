@@ -1,0 +1,197 @@
+# ------------------------
+#      General Stuff
+# ------------------------
+snippet fig "Figure Env" b
+\begin{figure}[${2:htpb}]
+	\centering
+	\includegraphics[width=${3:0.8}\linewidth]{${4:name.ext}}
+	\caption{${4/(\w+)\.\w+/\u$1/}$0}
+	\label{fig:${4/(\w+)\.\w+/$1/}}
+\end{figure}
+endsnippet
+
+snippet cent "center env"
+\begin{center}
+	$1
+\end{center}$0
+endsnippet
+
+snippet env "generic environment"
+\begin{${1:name}}
+	$2
+\end{$1}$0
+endsnippet
+
+snippet incg "includegraphics"
+\includegraphics[width=${1:0.8}\textwidth]{${2:image.ext}}$0
+endsnippet
+
+snippet enum "Enumerate" b
+\begin{enumerate}
+	\item $1
+\end{enumerate}
+$0
+endsnippet
+
+snippet item "Itemize" b
+\begin{itemize}
+	\item $1
+\end{itemize}
+$0
+endsnippet
+
+snippet desc "Description" b
+\begin{description}
+	\item[$1] $2
+\end{description}
+$0
+endsnippet
+
+# I don't understand the complexity of this here, but it works
+snippet pac "Package" b
+\usepackage`!p snip.rv='[' if t[1] else ""`${1:options}`!p snip.rv = ']' if t[1] else ""`{${2:package}}$0
+endsnippet
+
+# ------------------------
+#       Math Stuff
+# ------------------------
+
+snippet ali "align env"
+\begin{align*}
+	$1
+\end{align*}
+$0
+endsnippet
+
+snippet __ "Subscript" iA
+_{$1}$0
+endsnippet
+
+snippet ^^ "Superscript" iA
+^{$1}$0
+endsnippet
+
+snippet dm "Displaymath" b
+\[ ${1:Contents} \]
+$0
+endsnippet
+
+snippet `/ "Fraction" iA
+\frac{${1:num}}{${2:denom}}$0
+endsnippet
+
+snippet (( "Left Right ("
+\left( ${1:Contents} \right)$0
+endsnippet
+
+# -------------------------
+#      Tikz  Stuff
+# -------------------------
+snippet tikz "tikz environment"
+\begin{tikzpicture}
+	${1:Content}
+\end{tikzpicture}
+$0
+endsnippet
+
+# -------------------------
+#     Beamer Stuff
+# -------------------------
+
+snippet newslides "Initialize new slideshow"
+\documentclass[pdf, aspectratio=169]{beamer}
+\usepackage[]{hyperref, graphicx, siunitx, lmodern, tikz, booktabs, physics}
+\usepackage[mode=buildnew]{standalone}
+\usepackage{pdfpc-commands}
+
+\usetheme{${1:Theme}}
+
+\sisetup{per-mode=symbol}
+\usetikzlibrary{calc, patterns, decorations.markings, decorations.pathmorphing, shapes}
+
+%Preamble
+\title{${2:Title}}
+\author{Jed Rembold}
+\date{${3:Date}}
+
+\begin{document}
+$4
+\end{document}
+$0
+endsnippet
+
+snippet frame "frame env"
+\begin{frame}{${1:Title}}
+	${2:Slide Body}
+\end{frame}
+$0
+endsnippet
+
+snippet col "create columns environment"
+\begin{columns}
+	\column{0.5\textwidth}
+	$1
+	\column{0.5\textwidth}
+	$2
+\end{columns}
+$0
+endsnippet
+
+
+# --------------------
+#   Exam Class Stuff
+# --------------------
+
+snippet part "parts environment"
+\begin{parts}
+	$1
+\end{parts}$0
+endsnippet
+
+snippet sol "solution environment"
+\begin{solution}[$1]
+	$2
+\end{solution}$0
+endsnippet
+
+snippet newhw "new homework template"
+\documentclass[letterpaper,10pt]{exam}
+\usepackage{amsmath,anysize,graphicx,siunitx,tikz,booktabs, tikz-3dplot, physics}
+\usepackage[colorlinks]{hyperref}
+\marginsize{1in}{1in}{1in}{0.5in}
+
+\sisetup{per-mode=symbol}
+\usetikzlibrary{calc, patterns, decorations.markings, decorations.pathmorphing, shapes}
+
+% Setting up headers and footers
+\pagestyle{headandfoot}
+\firstpageheader{Name:}{}{Phys 221}
+\firstpageheadrule
+\firstpagefootrule
+\firstpagefooter{}{Due: ${1:Date}}{\thepage}
+\runningheadrule
+\runningheader{}{}{Phys 222}
+\runningfooter{}{$1}{\thepage}
+\runningfootrule
+
+\newcommand{\obj}[1]{
+	\begin{center}
+		\fbox{\fbox{\parbox{4in}{\textbf{Objective: }\emph{#1}}}}
+	\end{center}
+}
+
+\pointsinmargin
+%\printanswers
+
+\begin{document}
+
+Please answer the questions below to the best of your ability either in the space provided. Everything should be scanned or photographed and submitted through \url{gradescope.com}. See instructions for getting added to the gradescope class.
+
+\obj{${2:Objective}}
+\begin{questions}
+	\question
+	${3:Question}
+\end{questions}
+
+\end{document}
+endsnippet

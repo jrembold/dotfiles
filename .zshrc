@@ -1,69 +1,46 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH="/home/jedediah/.oh-my-zsh"
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-#ZSH_THEME="jeds-theme-powerline"
-ZSH_THEME='powerlevel9k/powerlevel9k'
-#ZSH_THEME='agnoster'
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
-# Configuracion POWERLVEL9K
-#POWERLEVEL9K_MODE='nerdfont-complete'
-
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=4
-POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
-
-# Elements
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv time vi_mode)
-POWERLEVEL9K_STATUS_VERBOSE=false
-
-POWERLEVEL9K_DIR_HOME_BACKGROUND='09'
-POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='09'
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='009'
-POWERLEVEL9K_DIR_HOME_FOREGROUND='236'
-POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='236'
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='236'
-
-# `git hub colors`
-#POWERLEVEL9K_VCS_CLEAN_BACKGROUND='236'
-POWERLEVEL9K_VCS_CLEAN_BACKGROUND='029'
-POWERLEVEL9K_VCS_CLEAN_FOREGROUND='236'
-POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='214'
-POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='236'
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='196'
-POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='236'
-
-# Icons
-POWERLEVEL9K_HOME_ICON=''
-POWERLEVEL9K_HOME_SUB_ICON=''
-POWERLEVEL9K_FOLDER_ICON=''
-
-# Vi-Mode
-POWERLEVEL9K_VI_MODE_INSERT_BACKGROUND='220'
-POWERLEVEL9K_VI_MODE_INSERT_FOREGROUND='236'
-POWERLEVEL9K_VI_MODE_NORMAL_BACKGROUND='245'
-POWERLEVEL9K_VI_MODE_NORMAL_FOREGROUND='236'
-
-# Clock
-POWERLEVEL9K_TIME_BACKGROUND='233'
-POWERLEVEL9K_TIME_FOREGROUND='09'
-
-# My additions
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
-POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX=' ❯ '
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -75,6 +52,8 @@ POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX=' ❯ '
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
+# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
+# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -84,26 +63,27 @@ POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX=' ❯ '
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(archlinux git)
 
-# User configuration
-#bindkey -v
-#export KEYTIMEOUT=1
-
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
-# export MANPATH="/usr/local/man:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -115,11 +95,12 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+#export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+# export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/home/jedediah/Bin/:/home/jedediah/.local/bin/":$PATH # <- was moved to .zshenv but maybe needs to be here as well?
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -130,9 +111,37 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Custom Aliases
+alias vim=nvim
+alias vimdiff='nvim -d'
 
 # Custom Exports
-export EDITOR=/usr/bin/vim
-export VISUAL=/usr/bin/vim
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
+export TERMCMD='alacritty'
 export DEFAULT_USER=jedediah
-alias vim='vim --servername VIM' # for texvim callbacks
+export RANGER_LOAD_DEFAULT_RC=false
+#alias vim='vim --servername VIM' #for texvim callbacks
+
+if [ "$(command -v exa)" ]; then
+    unalias -m 'll'
+    unalias -m 'l'
+    unalias -m 'la'
+    unalias -m 'ls'
+    alias ls='exa -G  --color auto --icons -a -s type'
+    alias ll='exa -l --color always --icons -a -s type'
+fi
+
+cat ~/.cache/wal/sequences
+. ~/.cache/wal/colors.sh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Stop zsh from closing child processes if the parent closes
+setopt NO_HUP
+
+bindkey -e
+
+
+source ~/.api_keys

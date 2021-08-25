@@ -1,0 +1,12 @@
+; vim:ft=dosini 
+
+;================================================
+; Colorscheme for Polybar based on Pywal colors
+;================================================
+
+[colors]
+bg = #0D1D23
+bg-trans = #AA0D1D23
+fg = #dceabf
+accent = #90BA7A
+alert = #A7CD87

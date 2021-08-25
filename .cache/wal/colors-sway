@@ -1,0 +1,21 @@
+set $wallpaper /home/jedediah/Pictures/Wallpaper/forest_minimal.jpg
+
+set $background #0D1D23
+set $foreground #dceabf
+
+set $color0 #0D1D23
+set $color1 #3F8C61
+set $color2 #54986D
+set $color3 #5CA174
+set $color4 #90BA7A
+set $color5 #77B188
+set $color6 #A7CD87
+set $color7 #dceabf
+set $color8 #9aa385
+set $color9 #3F8C61
+set $color10 #54986D
+set $color11 #5CA174
+set $color12 #90BA7A
+set $color13 #77B188
+set $color14 #A7CD87
+set $color15 #dceabf
