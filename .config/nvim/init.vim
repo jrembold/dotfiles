@@ -88,6 +88,9 @@ Plug 'tpope/vim-fugitive'
 " LaTeX Support
 Plug 'lervag/vimtex'
 
+" Snippets
+Plug 'SirVer/ultisnips'
+
 " Color Schemes
 Plug 'arcticicestudio/nord-vim'
 Plug 'folke/tokyonight.nvim'
@@ -113,6 +116,7 @@ colorscheme tokyonight
 luafile ~/.config/nvim/plug_conf/nvim-lspinstall.lua
 source ~/.config/nvim/plug_conf/nvim-lspconfig.vim
 luafile ~/.config/nvim/plug_conf/nvim-compe.lua
+luafile ~/.config/nvim/plug_conf/nvim-treesitter.lua
 source ~/.config/nvim/plug_conf/nvim-compe-keybinds.vim
 luafile ~/.config/nvim/plug_conf/lualine.lua
 source ~/.config/nvim/plug_conf/telescope.vim
@@ -125,6 +129,17 @@ source ~/.config/nvim/plug_conf/vimtex.vim
 "-------------------------------------------------------------------------------
 " General Autocommands
 "-------------------------------------------------------------------------------
-autocmd Filetype python set colorcolumn=80
+autocmd Filetype python set colorcolumn=88
 autocmd BufWritePost *note-*.md silent !buildNote %:p
 autocmd BufRead,BufNewFile *.pg set filetype=pg
+
+
+"-------------------------------------------------------------------------------
+" Markdown Slides auto make
+"-------------------------------------------------------------------------------
+function! CheckRunMake()
+	if filereadable("./Makefile")
+		: !make
+	endif
+endfunction
+autocmd BufWritePost *.md call CheckRunMake()
